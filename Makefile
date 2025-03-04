@@ -1,13 +1,13 @@
 NAME=pipex
 
 SRCS= pipex.c pipex_utils.c
-CFLAGS=
+CFLAGS=-Wall -Wextra -Werror
 LIBFT=libft/libft.a
 
 
 $(NAME): $(SRCS) 
 	make -C ./libft -s
-	cc  -o  $(NAME) -g $(SRCS) $(LIBFT) 
+	cc  -o  $(NAME)  $(CFLAGS) $(SRCS) $(LIBFT) 
 
 all: $(NAME)
 
