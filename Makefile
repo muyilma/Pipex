@@ -1,7 +1,7 @@
 NAME=pipex
 
 SRCS= pipex.c pipex_utils.c
-CFLAGS=-Wall -Wextra -Werror
+CFLAGS=-Wall -Wextra -Werror 
 LIBFT=libft/libft.a
 
 
